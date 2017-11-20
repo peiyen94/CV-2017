@@ -1,0 +1,351 @@
+/*
+ * *** You can say something about your file if you need it
+ */
+/*----------  $Catalog  ----------*/
+/**
+ * Global
+ * Elements
+ * Header
+ * About
+ * Portfolio
+ * Contact
+ * Footer
+ **/
+
+ /*----------  $Global  ----------*/
+$color-primary: #ff7a5a
+$color-secondary: #5b5b66
+$color-black: #353630
+$color-white: #fefefe 
+
+/*----------  $Elements  ----------*/
+/* background */
+.bg
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-image: url("../image/bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(60deg,$color-secondary,$color-primary)
+		opacity: 0.6
+
+/* btn */
+// normal
+.btn
+	display: inline-block
+	vertical-align: top
+	position: relative
+	margin: 0
+	height: 36px
+	line-height: 36px
+	padding: 0 16px
+	min-width: 64px
+	box-sizing: border-box
+	font-size: 14px
+	text-align: center
+	font-weight: 500
+	font-family: 'Helvetica','roboto', arial, sans-serif
+	letter-spacing: 1px
+	text-decoration: none
+	border: 0
+	border-radius: 18px
+	outline: 0
+	cursor: pointer
+	overflow: hidden
+	user-select: none
+	user-drag: none
+	transition: all 0.3s
+	&.btn--primary
+		background-color: $color-primary
+		color: $color-white
+		&:hover,:active
+			background-color: darken($color-primary,5)
+	&.btn--secondary
+		background-color: inherit
+		color: $color-primary
+		border: 1px solid $color-primary
+		&:hover,:active
+			background-color: $color-primary
+			color: $color-white
+	&.btn--lg
+		font-size: 20px
+		height: 56px
+		line-height: 56px
+		border-radius: 28px
+		padding: 0 64px
+	&.btn--md
+		font-size: 18px
+		height: 48px
+		line-height: 48px
+		border-radius: 24px
+		padding: 0 64px
+	&.btn--sm
+		font-size: 14px
+		height: 32px
+		line-height: 32px
+		border-radius: 16px
+		padding: 0 32px
+
+.btn-group
+	.btn
+		margin-left: 8px
+		margin-right: 8px
+.btn-group--center
+	text-align: center
+
+// fa btn
+.fa-btn
+	display: inline-block
+	width: 32px
+	height: 32px
+	line-height: 32px
+	font-size: 24px
+	.fa
+		display: block
+		text-align: center
+		transition: all 0.3s
+		&:hover
+			transform: translateY(-20%)
+
+/* image */
+.image
+	width: 100%
+	display: block
+
+/* imgbox */
+.imgbox
+	width: 100%
+	overflow: hidden
+.imgbox__inner
+	width: 100%
+	padding-top: 100%
+	&.imgbox__inner--4-3
+		padding-top: calc(100% * 3 / 4)
+	.image
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-size: cover
+		background-position: center
+ /*----------  $Header  ----------*/
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 100
+	transition: all 0.3s
+.header--color
+	background-color: $color-white
+	box-shadow: 0 3px 5px rgba(black,0.1)
+	.navbar__social-bar .fa
+		color: $color-primary
+	.menu__item
+		color: $color-primary
+		&:after
+			content: ""
+			background-color: $color-primary
+	.menu-toggle .icon
+		color: $color-primary
+
+
+/* navbar */
+.navbar--collapse
+	margin-right: -16px
+	margin-left: -16px
+.navbar-flex
+	display: flex
+	justify-content: space-between
+
+/* social-bar */
+.navbar__social-bar
+	padding: 24px
+	@media (max-width: 767px)
+		padding: 12px
+	.fa
+		color: $color-white
+		margin-top: 4px
+/* menu */
+.menu__item
+	display: block
+	font-size: 20px
+	font-weight: 600
+	letter-spacing: 1px
+	color: $color-white
+	&:after
+		content: ""
+		position: absolute
+		width: 2px
+		height: 0%
+		left: 3%
+		bottom: 35%
+		background-color: $color-white
+		transition: all 0.3s
+
+.menu.menu-horizontal
+	display: flex
+	li
+		&:hover > :after
+			height: 30%
+	.menu__item
+		line-height: 24px
+		padding: 28px 16px
+		margin-left: 16px
+
+/* menu-toggle */
+.menu-toggle
+	width: 48px
+	height: 48px
+	padding: 0 8px
+	text-align: center
+	display: none
+	@media (max-width: 767px)
+		display: block
+.menu-toggle .icon
+	color: $color-white
+	line-height: 56px
+
+/* reponsive-popup */
+.reponsive-popup__close
+	display: none
+@media (max-width: 767px)
+	.menu.reponsive-popup
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $color-white
+		z-index: 1000
+		opacity: 0
+		visibility: hidden
+		display: block
+		.menu__item
+			padding-top: 12px
+			padding-bottom: 12px
+			color: $color-primary
+			text-align: center
+		.popup-menu__close-flex
+			display: flex
+			justify-content: flex-end
+			margin-left: -16px
+			margin-right: -16px
+		.reponsive-popup__close
+			display: block
+			width: 48px
+			height: 48px
+			text-align: center
+			.icon
+				color: $color-primary
+				line-height: 48px
+			
+	#popup-menu:target
+		opacity: 1
+		visibility: visible
+		display: block
+
+ /*----------  $About  ----------*/
+.hero
+	padding-top: 20vh
+	padding-bottom: 20vh
+	@media (max-width: 480px)
+		padding-top: 80px
+		padding-bottom: 80px
+.hero__heading
+	font-size: 95px
+	font-weight: 900
+	color: $color-white
+	text-align: right
+	@media (max-width: 480px)
+		font-size: 60px
+ /*----------  $Portfolio  ----------*/
+.portfolio
+	padding-top: 80px
+	padding-bottom: 80px
+	@media (max-width: 767px)
+		padding-top: 40px
+		padding-bottom: 40px
+.portfolio-group
+	padding-top: 80px
+	@media (max-width: 767px)
+		padding-top: 40px
+	.imgbox
+		box-shadow: 0px 3px 5px rgba(black,0.5)
+		&:hover .image__title
+			background-color: rgba($color-secondary,0.8)
+		.image__title
+			position: absolute
+			bottom: 0
+			background-color: rgba($color-secondary,0.5)
+			width: 100%
+			height: 40px
+			color: $color-white
+			font-size: 20px
+			font-weight: 600
+			letter-spacing: 1px
+			line-height: 40px
+			padding-left: 10px
+			transition: all 0.3s
+
+ /*----------  $Contact  ----------*/
+.contact
+	padding-top: 80px
+	padding-bottom: 80px
+	@media (max-width: 767px)
+		padding-top: 40px
+		padding-bottom: 40px
+/* form */
+.form
+	max-width: 600px
+	margin-left: auto
+	margin-right: auto
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	textarea
+		display: inline-block
+		width: 100%
+		background-color: inherit
+		border: 1px solid darken($color-white,5)
+		color: $color-white
+		padding: 8px 16px
+		margin-bottom: 16px
+		vertical-align: middle
+		box-sizing: border-box
+		border-radius: 4px
+		&:focus
+			outline: 0
+			border: 1px solid $color-primary
+	textarea
+		resize: none
+	label
+		display: inline-block
+		margin-bottom: 8px
+		color: $color-white
+		vertical-align: middle
+		letter-spacing: 1px
+		font-size: 16px
+
+.form__btn-group
+	margin-top: 24px
+
+ /*----------  $Footer  ----------*/
+.footer
+	padding-top: 40px
+	padding-bottom: 40px
+	.copyright
+		font-size: 14px
+		letter-spacing: 1px

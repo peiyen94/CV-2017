@@ -1,0 +1,210 @@
+* {
+  position: relative;
+  font-family: "Helvetica", "Roboto", "Arial", sans-serif; }
+
+html {
+  padding: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+hr {
+  border-top: 1px;
+  border-color: #ff7a5a;
+  margin-top: 5px; }
+
+h1, h2, h4, p {
+  margin: 0; }
+
+/*----------  copyWriting  ----------*/
+/* title */
+.l-title, .r-title {
+  margin-top: 28px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 22px; }
+
+.l-title {
+  color: #fefefe; }
+
+.r-title {
+  color: #5b5b66; }
+
+/* subtitle */
+.l-subtitle, .r-subtitle {
+  letter-spacing: 1px;
+  font-weight: 500; }
+
+.l-subtitle {
+  color: #fefefe;
+  opacity: 0.6; }
+
+.r-subtitle {
+  color: #353630;
+  opacity: 0.7;
+  margin-top: 16px;
+  margin-bottom: 2px; }
+
+/* paragraph */
+.l-paragraph, .r-paragraph {
+  letter-spacing: 1px;
+  font-weight: 500; }
+
+.l-paragraph {
+  color: #fefefe; }
+
+.r-paragraph {
+  color: #353630;
+  font-weight: 600; }
+
+.small-paragraph {
+  color: #353630;
+  font-size: 15px;
+  opacity: 0.9; }
+
+/*----------  custom  ----------*/
+/* background */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../image/bg.jpg");
+  background-size: cover;
+  background-position: center; }
+  .bg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(30deg, #5b5b66, #ff7a5a);
+    background: -o-linear-gradient(30deg, #5b5b66, #ff7a5a);
+    background: linear-gradient(60deg, #5b5b66, #ff7a5a);
+    opacity: 0.6; }
+
+/* resume */
+.resume {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); }
+
+.left {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+  background-color: #5b5b66; }
+
+.right {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+  -ms-flex: 7;
+  flex: 7;
+  background-color: #fefefe; }
+
+.left, .right {
+  padding: 24px; }
+
+/* profilePic */
+.profilePic {
+  width: 90%;
+  margin: 10px auto; }
+  .profilePic .profilePic_imgbox {
+    width: 100%;
+    padding-top: 100%; }
+    .profilePic .profilePic_imgbox .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url("../image/profile-pic.png");
+      background-position: center;
+      background-size: cover; }
+
+/* name */
+.name {
+  color: #fefefe;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px; }
+
+/* logo */
+/* info */
+.info .l-subtitle {
+  margin-top: 16px; }
+
+/* language */
+.language li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 12px; }
+
+/* experience */
+/* skill */
+.skill > ul {
+  margin-top: 16px; }
+  .skill > ul > li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 14px; }
+
+.skill .valuebar {
+  width: 200px;
+  height: 7px;
+  border: 2px solid #ff7a5a;
+  border-radius: 5px;
+  background-color: rgba(91, 91, 102, 0.2); }
+  .skill .valuebar .value {
+    background-color: #ff7a5a;
+    height: 100%; }
+    .skill .valuebar .value.p30 {
+      width: 30%; }
+    .skill .valuebar .value.p50 {
+      width: 50%; }
+    .skill .valuebar .value.p60 {
+      width: 60%; }
+    .skill .valuebar .value.p70 {
+      width: 70%; }
+
+/*----------  utility  ----------*/
+.margin-10 {
+  margin: 10px; }

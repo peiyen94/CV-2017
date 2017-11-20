@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Hito's CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+  <link rel="icon" href="image/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/base.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/animate.css"/>
+  <link rel="stylesheet" href="css/component.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="bg"></div>
+    <header class="header js-header">
+      <div class="container">
+        <div class="navbar navbar--collapse navbar-flex">
+          <div class="social-bar navbar__social-bar"><a class="fa-btn" href="https://www.facebook.com/hito.tan.9" target="_blank"><i class="fa fa-facebook-official"></i></a><a class="fa-btn" href="https://github.com/peiyen94" target="_blank"><i class="fa fa-github"></i></a></div>
+          <div class="nav"><a class="menu-toggle" href="#popup-menu"><i class="icon fa fa-bars"></i></a>
+            <ul class="menu menu-horizontal reponsive-popup" id="popup-menu">
+              <div class="container">
+                <div class="popup-menu__close-flex"><a class="reponsive-popup__close" href="#!"><i class="icon fa fa-times"></i></a></div>
+              </div>
+              <li><a class="menu__item" href="#about">ABOUT</a></li>
+              <li><a class="menu__item" href="#portfolio">PORTFOLIO</a></li>
+              <li><a class="menu__item" href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="hero" id="about">
+        <div class="container">
+          <h1 class="hero__heading wow bounceInRight">HELLO<br/>I'M HITO</h1>
+        </div>
+      </div>
+      <div class="portfolio bg-color--white" id="portfolio">
+        <div class="container">
+          <h2 class="subtitle u-text-center color--secondary wow bounceInUp">PORTFOLIO</h2>
+          <div class="portfolio-group">
+            <div class="row justify-content-center">
+              <div class="col-md-6 u-mb-48 wow bounceInUp">
+                <div class="imgbox"><a href="portfolio/resume.html" target="_blank">
+                    <div class="imgbox__inner imgbox__inner--4-3">
+                      <div class="image" style="background-image: url('image/thumbnail/resume-thumbnail.JPG');">
+                        <div class="image__title">Resume</div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="col-md-6 u-mb-48 wow bounceInUp" data-wow-delay="0.4s">
+                <div class="imgbox"><a href="portfolio/guideline.html" target="_blank">
+                    <div class="imgbox__inner imgbox__inner--4-3">
+                      <div class="image" style="background-image: url('image/thumbnail/guideline-thumbnail.JPG');">
+                        <div class="image__title">Guideline</div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="col-md-6 wow bounceInUp">
+                <div class="imgbox"><a href="portfolio/ci.html" target="_blank">
+                    <div class="imgbox__inner imgbox__inner--4-3">
+                      <div class="image" style="background-image: url('image/thumbnail/ci-thumbnail.JPG');">
+                        <div class="image__title">Brand Identify</div>
+                      </div>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="container">
+          <h2 class="subtitle u-text-center color--white wow bounceInUp">CONTACT</h2>
+          <form class="form wow fadeInUp" action="">
+            <label for="">Name</label>
+            <input type="text"/>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">Phone</label>
+                <input type="tel"/>
+              </div>
+              <div class="col-md-6">
+                <label for="">Email</label>
+                <input type="email"/>
+              </div>
+            </div>
+            <label for="">Message</label>
+            <textarea name="" cols="30" rows="10"></textarea>
+            <div class="btn-group btn-group--center form__btn-group">
+              <input class="btn btn--primary btn--md" type="submit" value="Send"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright u-text-center color--white">Copyright © 2017 Hito Tan</p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-2.0.2.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>

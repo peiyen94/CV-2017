@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+html(lang="zh-TW")
+head
+	meta(charset="UTF-8")
+	title Hito's CV
+	meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0")
+	link(rel="icon" href="image/favicon.ico" type="image/x-icon" )
+	//- CSS
+	link(rel="stylesheet", href="css/base.css")
+	link(rel="stylesheet", href="css/layout.css")
+	link(rel="stylesheet", href="css/animate.css")
+	link(rel="stylesheet", href="css/component.css")
+body
+	.wrapper
+		//- Start bg
+		.bg
+		//- End bg
+
+		//- Start header
+		header.header.js-header
+			.container
+				.navbar.navbar--collapse.navbar-flex
+					.social-bar.navbar__social-bar
+						a(href="https://www.facebook.com/hito.tan.9" target="_blank").fa-btn
+							i.fa.fa-facebook-official
+						a(href="https://github.com/peiyen94" target="_blank").fa-btn
+							i.fa.fa-github
+					.nav
+						a(href="#popup-menu").menu-toggle
+							i.icon.fa.fa-bars
+						ul#popup-menu.menu.menu-horizontal.reponsive-popup
+							.container
+								.popup-menu__close-flex
+									a(href="#!").reponsive-popup__close
+										i.icon.fa.fa-times
+							li
+								a(href="#about").menu__item ABOUT
+							li
+								a(href="#portfolio").menu__item PORTFOLIO
+							li
+								a(href="#contact").menu__item CONTACT
+		//- End header
+
+		//- Start main
+		section.main
+			//- Start about
+			#about.hero
+				.container
+					h1.hero__heading.wow.bounceInRight
+							| HELLO
+							br
+							|I'M HITO
+			//- End about
+
+			//- Start portfolio
+			#portfolio.portfolio.bg-color--white
+				.container
+					h2.subtitle.u-text-center.color--secondary.wow.bounceInUp PORTFOLIO
+					.portfolio-group
+						.row.justify-content-center
+							.col-md-6.u-mb-48.wow.bounceInUp
+								.imgbox
+									a(href="portfolio/resume.html" target="_blank")
+										.imgbox__inner.imgbox__inner--4-3
+											.image(style="background-image: url('image/thumbnail/resume-thumbnail.JPG')")
+												.image__title Resume
+							.col-md-6.u-mb-48.wow.bounceInUp(data-wow-delay="0.4s")
+								.imgbox
+									a(href="portfolio/guideline.html" target="_blank")
+										.imgbox__inner.imgbox__inner--4-3
+											.image(style="background-image: url('image/thumbnail/guideline-thumbnail.JPG')")
+												.image__title Guideline
+							.col-md-6.wow.bounceInUp
+								.imgbox
+									a(href="portfolio/ci.html" target="_blank")
+										.imgbox__inner.imgbox__inner--4-3
+											.image(style="background-image: url('image/thumbnail/ci-thumbnail.JPG')")
+												.image__title Brand Identify
+			//- End portfolio
+
+			//- Start contact
+			#contact.contact
+				.container
+					h2.subtitle.u-text-center.color--white.wow.bounceInUp CONTACT
+					form(action="").form.wow.fadeInUp
+						label(for="") Name
+						input(type="text")
+						.row
+							.col-md-6
+								label(for="") Phone
+								input(type="tel")
+							.col-md-6
+								label(for="") Email
+								input(type="email")
+						label(for="") Message
+						textarea(name="", cols="30", rows="10")
+						.btn-group.btn-group--center.form__btn-group
+							input(type="submit" value="Send").btn.btn--primary.btn--md
+			//- End contact
+
+		//- End main
+
+		//- Start footer
+		footer.footer
+			.container
+				p.copyright.u-text-center.color--white Copyright © 2017 Hito Tan
+		//- End footer
+	//- JS
+	script(src="js/jquery-2.0.2.min.js")
+	script(src="js/wow.min.js")
+	script(src="js/custom.js")

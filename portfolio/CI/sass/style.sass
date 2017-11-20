@@ -1,0 +1,104 @@
+$color-primary: #ff7a5a
+$color-secondary: #5b5b66
+$color-white: #fefefe
+$color-black: #353630
+
+*
+	position: relative
+	font-family: "Helvetica", "Roboto", "Arial", sans-serif
+
+html,body
+	margin: 0
+	padding: 0
+
+.header
+	height: 300px
+	background-color: $color-secondary
+	& .logo
+		font-size: 85px
+		font-weight: 600
+		letter-spacing: 1px
+		color: $color-white
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translateX(-50%) translateY(-50%)
+		span
+			color: $color-primary
+
+.max-width-md
+	max-width: 768px
+	margin-left: auto
+	margin-right: auto
+
+.content
+	padding: 50px
+	& h5
+		font-size: 20px
+		margin-top: 20px
+		margin-bottom: 10px
+	& h1
+		font-size: 56px
+		margin-top: 20px
+	& h1.small_english
+		font-size: 40px
+		margin-bottom: 50px
+	& h2
+		font-size: 45px
+	& h2.small_english
+		font-size: 30px
+		margin-bottom: 40px
+	& h3
+		font-size: 34px
+	& h3.small_english
+		font-size: 20px
+		margin-bottom: 28px
+
+	& .small_english
+		letter-spacing: 1px
+		margin-top: -22px
+
+	& .titlehr
+		width: 56px
+		border-bottom: 5px solid $color-primary
+	& .colorchip
+		display: inline-block
+		margin-top: 20px
+		margin-right: 30px
+	& .color_tag,.color_block
+		display: inline-block
+		vertical-align: middle
+	& .color_tag
+		width: 64px
+	& .color_block
+		width: 30px
+		height: 30px
+		border: 2px solid
+	& .color_block_primary 
+ 		background-color: $color_primary 
+	& .color_block_secondary 
+		background-color: $color_secondary 
+	& .color_block_white 
+		background-color: $color_white 
+	& .color_block_black 
+		 background-color: $color_black 
+
+.content_white
+	background-color: $color_white
+	color: $color_secondary
+
+.content_secondary
+	background-color: $color_secondary
+	color: $color_white
+	& .small_english
+		color: $color_primary
+	& h1,h2,h3
+		font-weight: 500
+
+.content_black
+	background-color: $color_black
+	color: $color_white
+	& .small_english
+		color: $color_primary
+	& h1,h2,h3
+		font-weight: 500
