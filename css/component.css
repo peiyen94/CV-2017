@@ -360,7 +360,7 @@
   .form textarea {
     display: inline-block;
     width: 100%;
-    background-color: inherit;
+    background-color: transparent;
     border: 1px solid #f1f1f1;
     color: #fefefe;
     padding: 8px 16px;
