@@ -188,7 +188,7 @@ h1, h2, h4, p {
     margin-top: 14px; }
 
 .skill .valuebar {
-  width: 200px;
+  width: 190px;
   height: 7px;
   border: 2px solid #ff7a5a;
   border-radius: 5px;
@@ -196,14 +196,14 @@ h1, h2, h4, p {
   .skill .valuebar .value {
     background-color: #ff7a5a;
     height: 100%; }
-    .skill .valuebar .value.p30 {
-      width: 30%; }
     .skill .valuebar .value.p50 {
       width: 50%; }
-    .skill .valuebar .value.p60 {
-      width: 60%; }
+    .skill .valuebar .value.p65 {
+      width: 65%; }
     .skill .valuebar .value.p70 {
       width: 70%; }
+    .skill .valuebar .value.p80 {
+      width: 80%; }
 
 /*----------  utility  ----------*/
 .margin-10 {
