@@ -5,11 +5,9 @@
 html {
   padding: 50px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
@@ -39,6 +37,9 @@ h1, h2, h4, p {
 
 .r-title {
   color: #5b5b66; }
+
+.wb {
+  word-wrap: break-word; }
 
 /* subtitle */
 .l-subtitle, .r-subtitle {
@@ -98,7 +99,6 @@ h1, h2, h4, p {
 /* resume */
 .resume {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   max-width: 900px;
@@ -107,14 +107,12 @@ h1, h2, h4, p {
 
 .left {
   -webkit-box-flex: 5;
-  -webkit-flex: 5;
   -ms-flex: 5;
   flex: 5;
   background-color: #5b5b66; }
 
 .right {
   -webkit-box-flex: 7;
-  -webkit-flex: 7;
   -ms-flex: 7;
   flex: 7;
   background-color: #fefefe; }
@@ -142,30 +140,21 @@ h1, h2, h4, p {
 /* name */
 .name {
   color: #fefefe;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
   text-align: center;
   letter-spacing: 1px; }
 
 /* logo */
 /* info */
+.info li {
+  margin-top: 12px; }
+
 .info .l-subtitle {
   margin-top: 16px; }
 
 /* language */
 .language li {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-top: 12px; }
 
 /* experience */
@@ -174,22 +163,19 @@ h1, h2, h4, p {
   margin-top: 16px; }
   .skill > ul > li {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 14px; }
+    margin-top: 16px; }
 
 .skill .valuebar {
-  width: 190px;
-  height: 7px;
+  width: 180px;
+  height: 8px;
   border: 2px solid #ff7a5a;
   border-radius: 5px;
   background-color: rgba(91, 91, 102, 0.2); }
